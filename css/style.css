@@ -1,0 +1,238 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,600,700,800|Open+Sans:400,600,700,800&display=swap');
+*{
+    /* font-family: 'Montserrat', sans-serif;
+font-family: 'Open Sans', sans-serif; */
+margin: 0;
+padding: 0;
+list-style: none;
+text-decoration: none;
+}
+.container{
+width: 80%;
+margin: auto;
+
+}
+.logo{
+    width: 20%;
+    margin-left: 156px;
+    /* float: left; */
+}
+.nav{
+    width: 70%;
+    /* float: left; */
+}
+
+header{
+
+display: flex;
+
+justify-content: space-between;
+
+height: 80px;
+
+/* background: yellowgreen; */
+
+align-items: center;
+}
+h1{
+   color: #28377e;
+   font-size: 30px;
+   font-family: 'Montserrat', sans-serif;
+   text-transform: uppercase;
+}
+p{
+    color: #b0b0b1;
+    font-size: 16px;
+    font-family: 'Open Sans', sans-serif;
+    margin-top: 30px;
+}
+.nav ul{
+
+display: flex;
+
+justify-content: flex-end;
+}
+.nav ul li a{
+
+font-family: 'Open Sans', sans-serif;
+
+color: #28377e;
+
+font-size: 18px;
+
+text-transform: uppercase;
+
+font-weight: 600;
+}
+
+a {}
+.nav ul li{
+    /* float: left; */
+    margin-left: 45px;
+}
+.banner{
+    background-image: url(../images/lawyer_pro.png);
+    height: 700px;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    background-repeat: no-repeat;
+}
+.class{
+
+width: 750px;
+
+position: absolute;
+
+top: 32%;
+
+left: 32%;
+}
+.class h1{
+    
+font-size: 80px;
+    
+color: #fff;
+    
+font-weight: 200;
+}
+.icon{
+
+position: absolute;
+
+bottom: 10%;
+
+left: 49%;
+
+transform: translate(-49%,-10%);
+animation: icon-any 0.81s linear infinite ;
+animation-direction: alternate;
+
+/* size: 30px; */
+}
+.icon i{
+    
+font-size: 30px;
+    
+color: #fff;
+}
+
+@keyframes icon-any{
+    0%{
+        transform: translate(-49%,-0%);
+    }
+    100%{
+        transform: translate(-49%,-100%);
+    }
+}
+
+.who-we-are-content {
+    margin-top: 110px;
+    margin-left: 140px;
+    width: 50%;
+    float: left;
+}
+
+span {
+    width: 10%;
+    height: 3px;
+    background: #f15a26;
+    margin-bottom: 26px;
+    display: block;
+}
+img {margin-top: 86px;margin-left: 39px;}
+.what-we-do-content {
+    display: flex;
+    margin-left: 94px;
+    padding-bottom: 0px;
+    /* background: #F7F8F8; */
+    /* margin-bottom: 0px; */
+}
+
+.what-we-do {
+    background: #F7F8F8;
+    background-image: url(../images/lawyer_pro_2.png);
+    background-repeat: no-repeat;
+    background-position: right bottom;
+}
+
+.header {
+    /* margin-top: 34px;
+     */padding: 50px 0px;
+     width: 330px;
+     margin: auto;}
+
+span {
+    /* margin-top: 0px; */
+    /* position: absolute; */
+    /* padding-left: 59px; */
+    padding: 0px 30px;
+    margin-left: 65px;
+    /* text-align: center; */
+    /* top: 0%; */
+}
+.items {
+    padding: 20px;
+    position: relative;
+}
+
+
+.what-we {
+    position: absolute;
+    top: 54%;
+    left: 46%;
+    color: #F2F2F5;
+    width: 280px;
+    font-size: 20px;
+    text-transform: uppercase;
+    transform: translate(-32%);
+}
+
+
+.what-we h2 {
+    opacity: 0;
+}
+.items:hover .what-we h2{
+    opacity: 1;
+    transform: translate(-0%);
+    transition: all 1s ease;
+
+}
+i.fas.fa-long-arrow-alt-right {
+    position: absolute;
+    top: 83%;
+    left: 50%;
+    font-size: 33px;
+    color: #fff;
+}
+.items i{
+    opacity: 0;
+}
+.items:hover i{
+    opacity: 1;
+    transition: all 1s ease;
+}
+
+.img1{
+    position: relative;
+}
+.img1::after{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#1e5799+0,313385+0,313385+49,207cca+49,313385+49,207cca+49,207cca+49,313385+100&0+1,1+100 */
+background: -moz-linear-gradient(top,  rgba(49,51,133,0) 0%, rgba(49,52,134,0) 1%, rgba(32,124,202,0.48) 49%, rgba(49,51,133,1) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top,  rgba(49,51,133,0) 0%,rgba(49,52,134,0) 1%,rgba(32,124,202,0.48) 49%,rgba(49,51,133,1) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom,  rgba(49,51,133,0) 0%,rgba(49,52,134,0) 1%,rgba(32,124,202,0.48) 49%,rgba(49,51,133,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00313385', endColorstr='#313385',GradientType=0 ); /* IE6-9 */
+
+}
+.items:hover .img1::after{
+opacity: 1;
+top: 0;
+}
